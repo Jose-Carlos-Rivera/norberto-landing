@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Barquera",
+    "tagline": "Calzado Artesanal de Piel",
+    "description": "Desde México para el mundo. Zapatos y sandalias hechos a mano con los más finos materiales, tradición artesanal y diseño contemporáneo.",
+    "logo": "/images/logo.png",
+    "razónSocial": "Norberto Barquera Montiel",
+    "rfc": "",
+    "established": "2024"
+  },
+  "hero": {
+    "headline": "Artesanía que se lleva puesta",
+    "subheadline": "Calzado artesanal de piel hecho en México. Cada par cuenta una historia de tradición y diseño.",
+    "ctaText": "Ver Colección",
+    "backgroundImage": "/images/hero-bg.jpg"
+  },
+  "products": [
+    {
+      "id": "zapato-oxford",
+      "name": "Oxford Clásico",
+      "description": "Zapato oxford de piel genuina con suela de cuero cosida a mano. El clásico reinventado con materiales premium.",
+      "price": 3500,
+      "currency": "MXN",
+      "image": "/images/product-1.jpg",
+      "type": "shoe",
+      "category": "Zapatos"
+    },
+    {
+      "id": "zapato-monk",
+      "name": "Double Monk Strap",
+      "description": "Elegancia atemporal en piel de becerro. Doble hebilla de latón pulido con acabado artesanal.",
+      "price": 3800,
+      "currency": "MXN",
+      "image": "/images/product-2.jpg",
+      "type": "shoe",
+      "category": "Zapatos"
+    },
+    {
+      "id": "sandalia-artesanal",
+      "name": "Sandalia Artesanal",
+      "description": "Sandalia de piel trenzada a mano. Comodidad y estilo con raíces en la tradición mexicana.",
+      "price": 1800,
+      "currency": "MXN",
+      "image": "/images/product-3.jpg",
+      "type": "sandal",
+      "category": "Sandalias",
+      "kickstarterUrl": "https://www.kickstarter.com"
+    },
+    {
+      "id": "sandalia-huarache",
+      "name": "Huarache Contemporáneo",
+      "description": "El huarache mexicano reimaginado. Piel premium tejida a mano con suela ergonómica moderna.",
+      "price": 2200,
+      "currency": "MXN",
+      "image": "/images/product-4.jpg",
+      "type": "sandal",
+      "category": "Sandalias",
+      "kickstarterUrl": "https://www.kickstarter.com"
+    }
+  ],
+  "contact": {
+    "email": "nsbm_keruso@hotmail.com",
+    "phone": "+52 55 1728 8527",
+    "whatsapp": "525517288527",
+    "address": "Ciudad de México, México",
+    "instagram": "",
+    "facebook": ""
+  },
+  "legal": {
+    "companyName": "Norberto Barquera Montiel",
+    "legalType": "Persona Física con Actividad Empresarial",
+    "rfc": "",
+    "address": "Ciudad de México, México",
+    "copyright": "2024"
+  },
+  "kickstarter": {
+    "campaignUrl": "https://www.kickstarter.com",
+    "ctaText": "Apoya en Kickstarter",
+    "badge": "Campaña Activa"
+  }
+}
