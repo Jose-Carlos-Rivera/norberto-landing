@@ -40,7 +40,7 @@ export default function AdminPage() {
         }
       );
       if (!res.ok) throw new Error("Error al cargar contenido");
-      const data = await res.json();
+      const data = (await res.json()) as { sha: string; content: string };
       setFileSha(data.sha);
       const decoded = JSON.parse(atob(data.content));
       setContent(decoded);
@@ -86,7 +86,7 @@ export default function AdminPage() {
 
       if (!res.ok) throw new Error("Error al guardar");
 
-      const data = await res.json();
+      const data = (await res.json()) as { content: { sha: string } };
       setFileSha(data.content.sha);
       setMessage(
         "Cambios guardados y publicados. El sitio se actualizará en unos segundos."

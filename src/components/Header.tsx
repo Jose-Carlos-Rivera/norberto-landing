@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import content from "@/content/site-content.json";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo / Brand */}
           <a href="#" className="flex items-center gap-3">
-            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-wide text-tan-light">
+            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-wide text-tan-light notranslate">
               {content.brand.name}
             </span>
           </a>
@@ -43,38 +44,41 @@ export default function Header() {
             >
               Contacto
             </a>
-            <div id="google_translate_element" className="ml-4" />
+            <LanguageSelector variant="desktop" />
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-cream p-2"
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center gap-3 md:hidden">
+            <LanguageSelector variant="desktop" />
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-cream p-2"
+              aria-label="Toggle menu"
             >
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -102,11 +106,13 @@ export default function Header() {
               >
                 Contacto
               </a>
-              <div id="google_translate_element_mobile" className="pt-2" />
             </div>
           </div>
         )}
       </nav>
+
+      {/* Hidden Google Translate element - engine only, no UI */}
+      <div id="google_translate_element" className="hidden" />
     </header>
   );
 }

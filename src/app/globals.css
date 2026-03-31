@@ -30,31 +30,122 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Google Translate widget styling */
-.goog-te-banner-frame {
+/* ===== HIDE ALL GOOGLE TRANSLATE UI ===== */
+
+/* Hide the top toolbar/banner completely */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: absolute !important;
+  top: -9999px !important;
 }
 
+/* Prevent Google from pushing the body down */
 body {
+  top: 0 !important;
+  position: static !important;
+}
+
+html.translated-ltr,
+html.translated-rtl {
+  margin-top: 0 !important;
+}
+
+/* Hide all Google Translate gadget elements */
+.goog-te-gadget,
+.goog-te-gadget-simple,
+.goog-te-gadget-icon,
+.goog-te-menu-value,
+.goog-te-combo,
+#google_translate_element,
+.goog-te-spinner-pos,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+/* Remove the "Translated by Google" popup */
+.goog-te-ftab-frame,
+.goog-te-menu-frame,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hide any Google-injected skiptranslate divs */
+.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+/* But keep the hidden google_translate_element functional */
+#google_translate_element {
+  display: block !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+
+#google_translate_element .goog-te-combo {
+  display: block !important;
+  position: absolute !important;
+  visibility: hidden !important;
+}
+
+/* Remove any Google-added body styles */
+body[style*="top"] {
   top: 0 !important;
 }
 
-.goog-te-gadget {
-  font-size: 0 !important;
+/* Remove Google Translate highlight on translated text */
+font[style],
+font > font {
+  background: none !important;
+  box-shadow: none !important;
+  position: static !important;
 }
 
-.goog-te-gadget .goog-te-combo {
-  font-size: 14px;
-  padding: 4px 8px;
-  border: 1px solid var(--color-tan);
-  border-radius: 6px;
-  background: white;
-  color: var(--color-brown-dark);
-  cursor: pointer;
-  font-family: var(--font-sans), system-ui, sans-serif;
+/* ===== Custom scrollbar for language dropdown ===== */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
 }
 
-/* Animations */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 110, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 169, 110, 0.5);
+}
+
+/* ===== Animations ===== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
