@@ -14,15 +14,15 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Barquera | Calzado Artesanal de Piel - Hecho en México",
+  title: "611 Design | Calzado Hecho a Mano de Calidad Premium",
   description:
-    "Zapatos y sandalias artesanales de piel hechos a mano en México. Tradición, diseño contemporáneo y materiales premium. Apoya nuestra campaña en Kickstarter.",
+    "Zapatos y sandalias artesanales de piel hechos a mano. Altos estándares de calidad, productos hechos con el corazón e impecables en su manufactura. Apoya nuestra campaña en Kickstarter.",
   keywords:
-    "calzado artesanal, zapatos de piel, sandalias mexicanas, handmade shoes, leather sandals, kickstarter",
+    "calzado artesanal, zapatos de piel, sandalias, handmade shoes, leather sandals, kickstarter, 611 design",
   openGraph: {
-    title: "Barquera | Calzado Artesanal de Piel",
+    title: "611 Design | Calzado Hecho a Mano de Calidad Premium",
     description:
-      "Zapatos y sandalias artesanales de piel hechos a mano en México.",
+      "Zapatos y sandalias artesanales de piel hechos a mano de calidad premium.",
     type: "website",
   },
 };

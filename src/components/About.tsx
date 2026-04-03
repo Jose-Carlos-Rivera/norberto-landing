@@ -44,9 +44,9 @@ export default function About() {
             <p className="text-brown-light leading-relaxed mb-8">
               Cada par de zapatos y sandalias es cuidadosamente elaborado por
               manos artesanas que preservan técnicas heredadas por generaciones.
-              Utilizamos las mejores pieles y materiales, seleccionados uno a
-              uno, para crear calzado que no solo se ve extraordinario, sino que
-              se siente como una segunda piel.
+              Trabajamos con pieles de ternera, cocodrilo y materiales de la más
+              alta calidad. Nuestras suelas combinan tecnología de bota militar
+              con materiales reciclados: resistentes, ligeras y responsables.
             </p>
 
             {/* Features */}

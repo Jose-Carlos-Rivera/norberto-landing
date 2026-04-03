@@ -1,44 +1,44 @@
 {
   "brand": {
-    "name": "Barquera",
-    "tagline": "Calzado Artesanal de Piel",
-    "description": "Desde México para el mundo. Zapatos y sandalias hechos a mano con los más finos materiales, tradición artesanal y diseño contemporáneo.",
+    "name": "611 Design",
+    "tagline": "Calzado hecho a mano de calidad Premium",
+    "description": "Somos una empresa que se ciñe a altos estándares de calidad. Poniendo al alcance de nuestros clientes, productos hechos con el corazón e impecables en su manufactura.",
     "logo": "/images/logo.png",
     "razónSocial": "Norberto Barquera Montiel",
     "rfc": "",
     "established": "2024"
   },
   "hero": {
-    "headline": "Artesanía que se lleva puesta",
-    "subheadline": "Calzado artesanal de piel hecho en México. Cada par cuenta una historia de tradición y diseño.",
+    "headline": "Todo paso es un inicio",
+    "subheadline": "Artesanía que se luce. Calzado hecho a mano de calidad premium, desde México para el mundo.",
     "ctaText": "Ver Colección",
     "backgroundImage": "/images/hero-bg.jpg"
   },
   "products": [
     {
-      "id": "zapato-oxford",
-      "name": "Oxford Clásico",
-      "description": "Zapato oxford de piel genuina con suela de cuero cosida a mano. El clásico reinventado con materiales premium.",
-      "price": 3500,
+      "id": "oxford-cocodrilo",
+      "name": "Oxford en Piel de Cocodrilo",
+      "description": "Corte en piel de cocodrilo. Forro en piel de ternera. Suela en cuero pulido en tono rojo. Construcción a mano.",
+      "price": 9500,
       "currency": "MXN",
       "image": "/images/product-1.jpg",
       "type": "shoe",
       "category": "Zapatos"
     },
     {
-      "id": "zapato-monk",
-      "name": "Double Monk Strap",
-      "description": "Elegancia atemporal en piel de becerro. Doble hebilla de latón pulido con acabado artesanal.",
-      "price": 3800,
+      "id": "oxford-negro",
+      "name": "Oxford Clásico Negro",
+      "description": "Corte en piel premium color negro. Forro en piel de ternera. Suela en cuero pulido en tono verde. Construcción a mano.",
+      "price": 8700,
       "currency": "MXN",
       "image": "/images/product-2.jpg",
       "type": "shoe",
       "category": "Zapatos"
     },
     {
-      "id": "sandalia-artesanal",
-      "name": "Sandalia Artesanal",
-      "description": "Sandalia de piel trenzada a mano. Comodidad y estilo con raíces en la tradición mexicana.",
+      "id": "sandalia-grecia-ocre",
+      "name": "Sandalia Grecia — Ocre",
+      "description": "Sandalia hecha con piel de ternera color ocre. Suela reciclada con tecnología de bota militar, muy resistente y ligera. Construcción a mano.",
       "price": 1800,
       "currency": "MXN",
       "image": "/images/product-3.jpg",
@@ -47,10 +47,10 @@
       "kickstarterUrl": "https://www.kickstarter.com"
     },
     {
-      "id": "sandalia-huarache",
-      "name": "Huarache Contemporáneo",
-      "description": "El huarache mexicano reimaginado. Piel premium tejida a mano con suela ergonómica moderna.",
-      "price": 2200,
+      "id": "sandalia-grecia-negro",
+      "name": "Sandalia Grecia — Negro",
+      "description": "Sandalia hecha con piel de ternera color negro. Suela reciclada con tecnología de bota militar, muy resistente y ligera. Construcción a mano.",
+      "price": 1800,
       "currency": "MXN",
       "image": "/images/product-4.jpg",
       "type": "sandal",
