@@ -92,7 +92,8 @@ export default function LanguageSelector({ variant = "desktop" }: { variant?: "d
       }
 
       // Define the callback
-      (window as Record<string, unknown>).googleTranslateInit = () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).googleTranslateInit = () => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         new (window as any).google.translate.TranslateElement(
           { pageLanguage: "es", autoDisplay: false },
