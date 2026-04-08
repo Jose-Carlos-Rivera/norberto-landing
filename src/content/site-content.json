@@ -21,7 +21,13 @@
       "description": "Corte en piel de cocodrilo. Forro en piel de ternera. Suela en cuero pulido en tono rojo. Construcción a mano.",
       "price": 9500,
       "currency": "MXN",
-      "image": "/images/product-1.jpg",
+      "image": "/images/products/oxford-cocodrilo/main.jpeg",
+      "images": [
+        "/images/products/oxford-cocodrilo/main.jpeg",
+        "/images/products/oxford-cocodrilo/2.jpeg",
+        "/images/products/oxford-cocodrilo/3.jpeg",
+        "/images/products/oxford-cocodrilo/4.jpeg"
+      ],
       "type": "shoe",
       "category": "Zapatos"
     },
@@ -31,7 +37,13 @@
       "description": "Corte en piel premium color negro. Forro en piel de ternera. Suela en cuero pulido en tono verde. Construcción a mano.",
       "price": 8700,
       "currency": "MXN",
-      "image": "/images/product-2.jpg",
+      "image": "/images/products/oxford-negro/main.jpeg",
+      "images": [
+        "/images/products/oxford-negro/main.jpeg",
+        "/images/products/oxford-negro/2.jpeg",
+        "/images/products/oxford-negro/3.jpeg",
+        "/images/products/oxford-negro/4.jpeg"
+      ],
       "type": "shoe",
       "category": "Zapatos"
     },
@@ -42,6 +54,7 @@
       "price": 1800,
       "currency": "MXN",
       "image": "/images/product-3.jpg",
+      "images": [],
       "type": "sandal",
       "category": "Sandalias",
       "kickstarterUrl": "https://www.kickstarter.com"
@@ -53,11 +66,15 @@
       "price": 1800,
       "currency": "MXN",
       "image": "/images/product-4.jpg",
+      "images": [],
       "type": "sandal",
       "category": "Sandalias",
       "kickstarterUrl": "https://www.kickstarter.com"
     }
   ],
+  "about": {
+    "workshopImage": "/images/about/taller.jpeg"
+  },
   "contact": {
     "email": "nsbm_keruso@hotmail.com",
     "phone": "+52 55 1728 8527",

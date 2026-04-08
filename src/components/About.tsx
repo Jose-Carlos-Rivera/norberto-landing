@@ -1,3 +1,4 @@
+import Image from "next/image";
 import content from "@/content/site-content.json";
 
 export default function About() {
@@ -5,28 +6,15 @@ export default function About() {
     <section id="nosotros" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-cream-dark">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image placeholder */}
+          {/* Workshop image */}
           <div className="relative aspect-[4/3] bg-gradient-to-br from-brown/10 to-tan/10 rounded-lg overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center p-8">
-                <svg
-                  className="w-24 h-24 mx-auto text-tan/30 mb-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  />
-                </svg>
-                <p className="text-brown-light/40 text-sm uppercase tracking-wider">
-                  Taller Artesanal
-                </p>
-              </div>
-            </div>
+            <Image
+              src={content.about.workshopImage}
+              alt="Taller artesanal - 611 Design"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
 
           {/* Text content */}
