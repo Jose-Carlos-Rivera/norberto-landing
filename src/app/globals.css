@@ -25,31 +25,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), Georgia, serif;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===== HIDE ALL GOOGLE TRANSLATE UI ===== */
-
-/* Hide the top toolbar/banner completely */
+/* === Google Translate UI hiding (loaded on-demand) === */
 .goog-te-banner-frame,
-.goog-te-banner-frame.skiptranslate,
 iframe.goog-te-banner-frame {
   display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  width: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  position: absolute !important;
-  top: -9999px !important;
 }
 
-/* Prevent Google from pushing the body down */
 body {
   top: 0 !important;
-  position: static !important;
 }
 
 html.translated-ltr,
@@ -57,77 +44,41 @@ html.translated-rtl {
   margin-top: 0 !important;
 }
 
-/* Hide all Google Translate gadget elements */
 .goog-te-gadget,
-.goog-te-gadget-simple,
-.goog-te-gadget-icon,
-.goog-te-menu-value,
-.goog-te-combo,
-#google_translate_element,
-.goog-te-spinner-pos,
-.goog-tooltip,
-.goog-tooltip:hover,
-.goog-text-highlight {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  top: -9999px !important;
-}
-
-/* Remove the "Translated by Google" popup */
-.goog-te-ftab-frame,
-.goog-te-menu-frame,
-.goog-te-balloon-frame {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* Hide any Google-injected skiptranslate divs */
-.skiptranslate {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  opacity: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  top: -9999px !important;
-}
-
-/* But keep the hidden google_translate_element functional */
 #google_translate_element {
-  display: block !important;
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
-  width: 1px !important;
-  height: 1px !important;
+  height: 0 !important;
   overflow: hidden !important;
-  visibility: hidden !important;
 }
 
 #google_translate_element .goog-te-combo {
   display: block !important;
-  position: absolute !important;
-  visibility: hidden !important;
 }
 
-/* Remove any Google-added body styles */
+.goog-te-ftab-frame,
+.goog-te-menu-frame,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.skiptranslate {
+  display: none !important;
+  height: 0 !important;
+}
+
 body[style*="top"] {
   top: 0 !important;
 }
 
-/* Remove Google Translate highlight on translated text */
 font[style],
 font > font {
   background: none !important;
   box-shadow: none !important;
-  position: static !important;
 }
 
-/* ===== Custom scrollbar for language dropdown ===== */
+/* === Custom scrollbar for language dropdown === */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -145,7 +96,7 @@ font > font {
   background: rgba(201, 169, 110, 0.5);
 }
 
-/* ===== Animations ===== */
+/* === Animations === */
 @keyframes fadeInUp {
   from {
     opacity: 0;

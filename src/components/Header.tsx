@@ -110,9 +110,6 @@ export default function Header() {
           </div>
         )}
       </nav>
-
-      {/* Hidden Google Translate element - engine only, no UI */}
-      <div id="google_translate_element" className="hidden" />
     </header>
   );
 }
