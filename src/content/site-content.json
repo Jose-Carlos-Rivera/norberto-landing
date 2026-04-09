@@ -23,10 +23,10 @@
       "currency": "MXN",
       "image": "/images/products/oxford-cocodrilo/main.jpeg",
       "images": [
-        "/images/products/oxford-cocodrilo/main.jpeg",
         "/images/products/oxford-cocodrilo/2.jpeg",
         "/images/products/oxford-cocodrilo/3.jpeg",
-        "/images/products/oxford-cocodrilo/4.jpeg"
+        "/images/products/oxford-cocodrilo/4.jpeg",
+        "/images/products/oxford-cocodrilo/main.jpeg"
       ],
       "type": "shoe",
       "category": "Zapatos"
@@ -39,10 +39,10 @@
       "currency": "MXN",
       "image": "/images/products/oxford-negro/main.jpeg",
       "images": [
-        "/images/products/oxford-negro/main.jpeg",
         "/images/products/oxford-negro/2.jpeg",
         "/images/products/oxford-negro/3.jpeg",
-        "/images/products/oxford-negro/4.jpeg"
+        "/images/products/oxford-negro/4.jpeg",
+        "/images/products/oxford-negro/main.jpeg"
       ],
       "type": "shoe",
       "category": "Zapatos"
