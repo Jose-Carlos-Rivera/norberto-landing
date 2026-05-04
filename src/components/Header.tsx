@@ -9,7 +9,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-cream border-b border-tan/20 sticky top-0 z-50 shadow-sm">
       {/* Top bar — thin navy strip with tagline */}
       <div className="bg-brown-dark text-cream/80 text-xs py-2 px-4 text-center tracking-widest uppercase">
         {content.brand.tagline}
