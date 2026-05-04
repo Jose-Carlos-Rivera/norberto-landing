@@ -10,8 +10,8 @@ export default function Header() {
 
   return (
     <header className="bg-cream border-b border-tan/20 sticky top-0 z-50 shadow-sm">
-      {/* Top bar — thin navy strip with tagline */}
-      <div className="bg-brown-dark text-cream/80 text-xs py-2 px-4 text-center tracking-widest uppercase">
+      {/* Top bar — teal/aqua strip with tagline */}
+      <div className="bg-tan text-white text-xs py-2 px-4 text-center tracking-widest uppercase font-medium">
         {content.brand.tagline}
       </div>
 
