@@ -274,7 +274,7 @@ export default function LanguageSelector({ variant = "desktop" }: { variant?: "d
         className={`flex items-center gap-2 transition-all duration-200 ${
           isMobile
             ? "text-cream/80 hover:text-tan text-sm tracking-widest uppercase py-2 w-full"
-            : "bg-brown/50 hover:bg-brown/80 text-cream/90 hover:text-cream px-3 py-1.5 rounded-full text-xs tracking-wider border border-cream/10 hover:border-tan/40"
+            : "bg-brown-dark hover:bg-brown text-cream/90 hover:text-cream px-3 py-1.5 rounded-full text-xs tracking-wider border border-transparent hover:border-tan/30 transition-colors"
         }`}
       >
         <span className="text-base leading-none">{currentLang.flag}</span>
