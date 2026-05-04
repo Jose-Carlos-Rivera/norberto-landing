@@ -60,11 +60,13 @@ export default function Footer() {
               Contacto
             </h4>
             <ul className="space-y-2 text-cream/60 text-sm">
-              <li>
-                <a href={`mailto:${content.contact.email}`} className="hover:text-tan-light transition-colors">
-                  {content.contact.email}
-                </a>
-              </li>
+              {content.contact.email && (
+                <li>
+                  <a href={`mailto:${content.contact.email}`} className="hover:text-tan-light transition-colors">
+                    {content.contact.email}
+                  </a>
+                </li>
+              )}
               <li>
                 <a href={`tel:${content.contact.phone.replace(/\s/g, "")}`} className="hover:text-tan-light transition-colors">
                   {content.contact.phone}

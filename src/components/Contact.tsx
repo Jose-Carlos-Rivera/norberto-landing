@@ -14,22 +14,24 @@ export default function Contact() {
           <div className="w-20 h-0.5 bg-tan mx-auto mb-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {/* Email */}
-          <div className="text-center p-6 sm:p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-14 h-14 bg-tan/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-6 h-6 text-tan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
+        <div className={`grid grid-cols-1 gap-8 max-w-4xl mx-auto ${content.contact.email ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
+          {/* Email — only shown if set */}
+          {content.contact.email && (
+            <div className="text-center p-6 sm:p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-tan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-tan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-lg font-bold text-brown-dark mb-2">Email</h3>
+              <a
+                href={`mailto:${content.contact.email}`}
+                className="text-tan hover:text-tan-dark transition-colors text-sm break-all"
+              >
+                {content.contact.email}
+              </a>
             </div>
-            <h3 className="font-serif text-lg font-bold text-brown-dark mb-2">Email</h3>
-            <a
-              href={`mailto:${content.contact.email}`}
-              className="text-tan hover:text-tan-dark transition-colors text-sm break-all"
-            >
-              {content.contact.email}
-            </a>
-          </div>
+          )}
 
           {/* Phone / WhatsApp */}
           <div className="text-center p-6 sm:p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">

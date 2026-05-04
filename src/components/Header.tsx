@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import content from "@/content/site-content.json";
 import LanguageSelector from "./LanguageSelector";
 
@@ -11,7 +12,7 @@ export default function Header() {
     <header className="bg-brown-dark text-cream sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-brown text-cream/80 text-xs py-2 px-4 text-center tracking-widest uppercase">
-        {content.brand.razónSocial} &mdash; {content.brand.tagline}
+        {content.brand.tagline}
       </div>
 
       {/* Main nav */}
@@ -19,7 +20,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo / Brand */}
           <a href="#" className="flex items-center gap-3">
-            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-wide text-tan-light notranslate">
+            <Image
+              src={content.brand.logo}
+              alt={content.brand.name}
+              width={64}
+              height={64}
+              className="h-14 w-14 sm:h-16 sm:w-16 object-contain notranslate"
+              priority
+            />
+            <span className="font-serif text-xl sm:text-2xl font-bold tracking-wide text-tan-light notranslate hidden sm:block">
               {content.brand.name}
             </span>
           </a>
