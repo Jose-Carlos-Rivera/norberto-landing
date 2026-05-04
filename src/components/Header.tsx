@@ -19,7 +19,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo / Brand */}
-          <a href="#" className="flex items-center gap-3">
+          <a href="#" className="flex items-center">
             <Image
               src={content.brand.logo}
               alt={content.brand.name}
@@ -28,9 +28,6 @@ export default function Header() {
               className="h-14 w-14 sm:h-16 sm:w-16 object-contain notranslate"
               priority
             />
-            <span className="font-serif text-xl sm:text-2xl font-bold tracking-wide text-tan-light notranslate hidden sm:block">
-              {content.brand.name}
-            </span>
           </a>
 
           {/* Desktop nav */}

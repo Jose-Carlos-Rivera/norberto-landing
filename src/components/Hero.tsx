@@ -13,7 +13,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 25% 50%, rgba(201,169,110,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(201,169,110,0.2) 0%, transparent 50%)",
+              "radial-gradient(circle at 25% 50%, rgba(42,184,168,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(42,184,168,0.2) 0%, transparent 50%)",
           }}
         />
       </div>

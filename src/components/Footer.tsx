@@ -90,17 +90,6 @@ export default function Footer() {
             </div>
             <div className="text-center sm:text-right">
               <p>&copy; {currentYear} {content.brand.name}. Todos los derechos reservados.</p>
-              <p className="mt-1">
-                Desarrollado por{" "}
-                <a
-                  href="https://bolt.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-tan/60 hover:text-tan transition-colors"
-                >
-                  Bolt.dev
-                </a>
-              </p>
             </div>
           </div>
         </div>
